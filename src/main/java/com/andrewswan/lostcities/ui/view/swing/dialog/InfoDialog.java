@@ -24,13 +24,14 @@ import javax.swing.JTextPane;
  */
 public abstract class InfoDialog extends JDialog implements ActionListener {
 
-	// Class variables
+	// Constants
+	private static final long serialVersionUID = -5364848692156492585L;
+	
+	// Instance variables
 	private int width;
 	private int height;
-
-	// Instance variables
 	private final JScrollPane scrollPane = new JScrollPane();
-	protected JTextPane textPane = new JTextPane();
+	protected final JTextPane textPane = new JTextPane();
 	private final JPanel btnPanel = new JPanel();
 	private final FlowLayout flowLayout2 = new FlowLayout();
 	private final JButton okButton = new JButton("OK");

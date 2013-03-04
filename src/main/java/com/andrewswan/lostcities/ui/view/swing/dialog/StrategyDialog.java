@@ -12,6 +12,8 @@ public class StrategyDialog extends InfoDialog {
 	private static final int HEIGHT_PIXELS = 450;
 	private static final int WIDTH_PIXELS = 800;
 
+	private static final long serialVersionUID = -1814919534856564627L;
+
 	private static final String TITLE = "Strategy";
 
 	private static final String STRATEGY =

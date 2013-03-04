@@ -16,6 +16,7 @@ import com.andrewswan.lostcities.domain.Suit;
 public class ExpedLabel extends JLabel {
 
 	// Constants
+	private static final long serialVersionUID = -3052049871361545397L;
 	private static final int HEIGHT_PIXELS = 100;
 	private static final int WIDTH_PIXELS = 80;
 

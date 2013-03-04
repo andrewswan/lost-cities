@@ -40,6 +40,8 @@ import com.andrewswan.lostcities.domain.move.Discard;
 public class CardPlayDialog extends JDialog {
 
 	// Constants
+	private static final long serialVersionUID = 5550185207059436316L;
+	
 	protected static final Log LOGGER = LogFactory.getLog(CardPlayDialog.class);
 
 	private static final char ADD_TO_EXPEDITION_MNEMONIC = 'A';

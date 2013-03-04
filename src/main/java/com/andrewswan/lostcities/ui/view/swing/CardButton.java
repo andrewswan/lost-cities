@@ -23,6 +23,8 @@ public abstract class CardButton extends JButton {
 
 	protected static final Log LOGGER = LogFactory.getLog(CardButton.class);
 
+	private static final long serialVersionUID = -8454397493037289040L;
+
 	// Colours
 	private static final Color DISABLED_COLOUR = Color.lightGray;
 	private static final Color ENABLED_COLOUR = Color.white;

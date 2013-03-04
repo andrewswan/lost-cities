@@ -11,6 +11,8 @@ public class RulesDialog extends InfoDialog {
 	private static final int HEIGHT_PIXELS = 400;
 	private static final int WIDTH_PIXELS = 800;
 
+	private static final long serialVersionUID = -7973336908542166466L;
+
 	private static final String TITLE = "Rules";
 
 	private static final String RULES =

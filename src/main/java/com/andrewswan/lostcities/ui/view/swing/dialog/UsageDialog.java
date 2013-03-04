@@ -8,6 +8,8 @@ public class UsageDialog extends InfoDialog {
 	private static final int HEIGHT_PIXELS = 520;
 	private static final int WIDTH_PIXELS = 800;
 
+	private static final long serialVersionUID = 2424193704732075162L;
+
 	private static final String TITLE = "Usage";
 
 	private static final String INSTRUCTIONS =

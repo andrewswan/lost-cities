@@ -10,6 +10,8 @@ import com.andrewswan.lostcities.domain.Deck;
 public class DeckButton extends CardButton {
 
 	// Constants
+	private static final long serialVersionUID = -876529420980141214L;
+	
 	private static final String CARD_BACK_TEXT = "Draw Pile";
 
 	/**

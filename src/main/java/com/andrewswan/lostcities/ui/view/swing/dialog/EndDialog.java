@@ -1,4 +1,3 @@
-// EndDialog.java
 package com.andrewswan.lostcities.ui.view.swing.dialog;
 
 import java.awt.BorderLayout;
@@ -21,23 +20,23 @@ import javax.swing.SwingConstants;
  */
 public class EndDialog extends JDialog implements ActionListener {
 
-	// Class variables
+	// Constants
+	private static final long serialVersionUID = 3432210778843074702L;
 	private static final boolean MODAL = true;
 	private static final int WIDTH_PIXELS = 300;
 	private static final int HEIGHT_PIXELS = 150;
 
 	// Instance variables
+	private JPanel buttonPanel = new JPanel(new GridLayout(1, 2));
+	private JButton againButton = new JButton("Play Again");
+	private JButton exitButton = new JButton("Exit Lost Cities");
 
-	JPanel buttonPanel = new JPanel(new GridLayout(1, 2));
-	JButton againButton = new JButton("Play Again");
-	JButton exitButton = new JButton("Exit Lost Cities");
-
-	String choice;
-	FlowLayout flowLayout1 = new FlowLayout();
-	BorderLayout borderLayout1 = new BorderLayout();
-	JPanel textPanel = new JPanel();
-	JLabel resultLabel = new JLabel();
-	FlowLayout flowLayout2 = new FlowLayout();
+	private String choice;
+	private FlowLayout flowLayout1 = new FlowLayout();
+	private BorderLayout borderLayout1 = new BorderLayout();
+	private JPanel textPanel = new JPanel();
+	private JLabel resultLabel = new JLabel();
+	private FlowLayout flowLayout2 = new FlowLayout();
 
 	// Abstract constructor (we never call this, just used to spawn other
 	// contructors)

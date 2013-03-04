@@ -25,6 +25,8 @@ public class AboutDialog extends JDialog implements ActionListener {
 	private static final int WIDTH_PIXELS = 250;
 	private static final int HEIGHT_PIXELS = 215;
 
+	private static final long serialVersionUID = 3917311048868046305L;
+
 	private static final String TITLE = "About";
 
 	// Properties

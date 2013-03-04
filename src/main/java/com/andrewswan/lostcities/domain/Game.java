@@ -449,6 +449,7 @@ public class Game extends Observable {
 	 *
 	 * @throws IllegalStateException if the game is over
 	 */
+	@SuppressWarnings("unused")
 	private void newPlayerTurn() {
 		Assert.state(!isOver(), "Game is already over");
 		if (this.playerOne.equals(activePlayer)) {

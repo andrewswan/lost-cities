@@ -11,6 +11,9 @@ import com.andrewswan.lostcities.domain.Card;
  */
 public class HandButton extends CardButton {
 
+	// Constants
+	private static final long serialVersionUID = -1453156052056055356L;
+
 	/**
 	 * Constructor for a disabled button showing no card
 	 */

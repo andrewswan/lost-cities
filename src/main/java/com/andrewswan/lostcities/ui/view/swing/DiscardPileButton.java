@@ -14,6 +14,9 @@ import com.andrewswan.lostcities.domain.Suit;
  */
 public class DiscardPileButton extends CardButton {
 
+	// Constants
+	private static final long serialVersionUID = 4788227101555196324L;
+	
 	// Properties
 	private final Suit suit;
 
