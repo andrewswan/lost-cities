@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+  <!-- TODO use JSPF to look for plugged-in strategies, see
+    http://code.google.com/p/jspf/ -->
+	<bean id="aiStrategy"
+	   class="com.andrewswan.lostcities.domain.player.strategy.DrawAndDiscardStrategy"/>
+
+  <bean id="aiPlayer"
+     class="com.andrewswan.lostcities.domain.player.ComputerPlayer">
+     <constructor-arg ref="aiStrategy"/>
+  </bean>
+  
+  <bean id="humanPlayer"
+  	class="com.andrewswan.lostcities.domain.player.HumanPlayer">
+  	<constructor-arg value="Andrew"/>
+  </bean>
+  
+  <bean id="game" class="com.andrewswan.lostcities.domain.Game">
+  	<constructor-arg ref="aiPlayer"/>
+  	<constructor-arg ref="humanPlayer"/>
+  </bean>
+  
+  <bean id="musicPlayer" class="com.andrewswan.lostcities.ui.view.MusicPlayer"/>
+  
+  <bean id="view" class="com.andrewswan.lostcities.ui.view.swing.SwingView"/>
+  
+  <!-- The controller is the intermediary between the game (model) and view -->
+  <bean id="controller"
+     class="com.andrewswan.lostcities.ui.controller.Controller">
+     <constructor-arg ref="game"/>
+     <constructor-arg ref="view"/>
+     <constructor-arg ref="musicPlayer"/>
+  </bean>
+  
+</beans>
